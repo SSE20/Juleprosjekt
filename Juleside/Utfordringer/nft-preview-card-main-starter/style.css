@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  /* Primary */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+  --very-dark-blue-1: hsl(217, 54%, 11%);
+  --very-dark-blue-2: hsl(216, 50%, 16%);
+  --very-dark-blue-3: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  --br-10: 10px;
+}
+
+/* ===========================
+   GLOBAL STYLES
+   =========================== */
+
+body {
+  font-family: "Outfit", sans-serif;
+  
+  background-color: var(--very-dark-blue-2);
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main{
+  background-color: var(--very-dark-blue-1);
+  max-width: 400px;
+  max-height: 600px;
+  padding: 10px;
+
+  box-shadow: 0px 10px 10px 10px var(--very-dark-blue-1);  /* FIKS DENNE */
+  border-radius: var(--br-10);
+}
+
+.container{
+  background-color: var(--very-dark-blue-3);
+  border-radius: var(--br-10);
+  padding: 20px; 
+
+  max-height: 580px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.equilibrium-img{
+  border-radius: var(--br-10);
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  max-height: 300px;
+}
+
+p{
+  font-size: 18px;
+  color: var(--soft-blue);
+  line-height: 1.5;
+}
+
+h1{
+  color: var(--white);
+  font-size: 25px;
+}
+
+.price-container{
+  min-width: 100%;
+  display: flex;
+}
+
+.eth{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
+  min-width: 50%;
+}
+
+.etherium-icon{
+  max-height: 25px;
+}
+
+.price{
+  color: var(--cyan);
+  font-weight: bold;
+}
+
+.time{
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+
+  min-width: 50%;
+}
+
+.avatar{
+  border-top: 1px solid var(--soft-blue);
+}
+
+.flex-box{
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.avatar-img{
+  border: var(--white) solid 2px;
+  border-radius: 50%;
+
+  max-width: 35px;
+  aspect-ratio: 1/1;
+}
+
+span{
+  color: var(--white);
+}

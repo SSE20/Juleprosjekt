@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-rasberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-gray: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+
+ /*  --background-color: hsl(31, 11%, 95%); */
+
+  --fs-p: 16px;
+  --li-m: 20px;
+
+  --br-20: 20px;
+  --p-40: 40px;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+
+  min-height: 100vh;
+  background-color: var(--eggshell);
+}
+
+main{
+  max-width: 70%;
+  margin: 100px auto;
+
+  background-color: var(--white);
+  border-radius: var(--br-20);
+  padding: var(--p-40);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: var(--p-40);
+}
+
+.omelette-img{
+  border-radius: var(--br-20);
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+h2{
+  color: var(--nutmeg);
+}
+
+li p{
+  margin-left: 20px;
+}
+
+h1{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+p{
+  font-size: var(--fs-p);
+  line-height: 1.5;
+}
+
+.preparation-time{
+  background-color: var(--rose-white);
+  border-radius: var(--br-20);
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h3{
+  color: var(--dark-rasberry);
+  font-weight: 800;
+  font-size: 23px;
+}
+
+.preparation-list ::marker{
+  color: var(--dark-rasberry);
+}
+
+.preparation-list{
+  margin-left: 30px;
+}
+
+.preparation-list li{
+  margin-top: var(--li-m);
+}
+
+.ingredient-list ::marker{
+  color: var(--dark-rasberry);
+}
+
+.ingredient-list{
+  margin-top: 20px;
+  margin-left: 20px;
+  list-style-type: square;
+}
+
+.ingredient-list li{
+  margin-top: var(--li-m);
+}
+
+.instructions{
+  border-top: var(--light-gray) solid 1px;
+  border-bottom: var(--light-gray) solid 1px;
+}
+
+.instructions-container{
+  margin: 40px 0 40px 0;
+}
+
+.instruction-list{
+  margin-left: var(--li-m);
+}
+
+.instruction-list li{
+  margin-top: var(--li-m);
+}
+
+.instruction-list ::marker{
+  color: var(--dark-rasberry);
+  font-weight: bold;
+}
+
+.nutrition p{
+  margin-top: 30px;
+}
+
+span{
+  color: var(--wenge-brown);
+  font-weight: bold;
+}
+
+table{
+  margin-top: 20px;
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+td{
+  min-width: 50%;
+  padding: 15px;
+}
+
+tr{
+  border-bottom: solid 1px var(--light-gray);
+}
+
+.fat{
+  border-bottom: none;
+}
+
+@media (width < 375px){
+  main{
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .omelette-img{
+    border-radius: 0;
+    max-width: 100%;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+
+  .preparation-time{
+    padding: 20px;
+  }
+
+  .info, .preparation-time, .ingredients, .instructions, .nutrition{
+    margin: 0 20px 0 20px;
+  }
+
+  table{
+    margin-bottom: 20px;
+  }
+}
